@@ -24,10 +24,10 @@ using System.Threading.Tasks;
 namespace MyDev.K3.SCM.Stock.Business.PlugIn
 {
     [Description("采购List测试插件")]
-    class ReceiptList : AbstractListPlugIn
+    public class ReceiptList : AbstractListPlugIn
     {
 
-        private string callSys = "";
+        //private string callSys = "";
         private bool isEnableReserve;
         public override void OnInitialize(InitializeEventArgs e)
         {

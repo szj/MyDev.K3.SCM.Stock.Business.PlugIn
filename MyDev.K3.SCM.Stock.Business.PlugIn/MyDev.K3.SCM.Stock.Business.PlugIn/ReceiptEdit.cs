@@ -1,5 +1,6 @@
 ﻿using Kingdee.BOS.Contracts;
 using Kingdee.BOS.Core.Bill;
+using Kingdee.BOS.Core.Bill.PlugIn;
 using Kingdee.BOS.Core.CommonFilter;
 using Kingdee.BOS.Core.DynamicForm;
 using Kingdee.BOS.Core.DynamicForm.PlugIn.Args;
@@ -25,9 +26,9 @@ using System.Text.RegularExpressions;
 namespace MyDev.K3.SCM.Stock.Business.PlugIn
 {
    [Description("采购Bill测试插件")]
-    public class ReceiptEdit : Kingdee.BOS.Core.Bill.PlugIn.AbstractBillPlugIn
+    public class ReceiptEdit : AbstractBillPlugIn
     {
-
+       // BillTypeParaEdit
 
         public static void OpenPurSystemParam(IDynamicFormView view)
         {
